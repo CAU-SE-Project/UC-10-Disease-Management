@@ -30,7 +30,7 @@ class Alarm2(QWidget):
         # self.te.move(60, 70)
 
         btn = QPushButton(self)
-        btn.setText('3. 확인')
+        btn.setText('확인')
 
         btn.clicked.connect(self.save_alarm)
         # btn.clicked.connect(self.load_alarm)
