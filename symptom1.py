@@ -1,6 +1,9 @@
 # symptom1.py
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QVBoxLayout
+from main_page import *
+from controller import *
+from pageMaker import *
 
 
 class Sym_1(QWidget):
@@ -9,6 +12,7 @@ class Sym_1(QWidget):
         self.initUI()
 
     def initUI(self):
+        con = Controller()
         btn1 = QPushButton(self)
         btn1.setText('symptom 입력')
 
@@ -20,12 +24,12 @@ class Sym_1(QWidget):
         vbox.addWidget(btn2)
 
         self.setLayout(vbox)
-        self.setWindowTitle('Symptom')
+        self.setWindowTitle('QPushButton')
         self.setGeometry(300, 300, 300, 200)
-        self.show()
+        # self.show()
 
-
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Sym_1()
-    sys.exit(app.exec_())
+if __name__ == "__main__":
+    app1 = QApplication(sys.argv)
+    ex1 = Sym_1()
+    ex1.show()
+    app1.exec_()

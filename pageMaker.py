@@ -23,8 +23,7 @@ class Display():
         if page_num == 1:
             app1 = QApplication(sys.argv)
             ex1 = symptom1.Sym_1()
-            sys.exit(app1.exec_())
-
+            ex1.show()
 
         elif page_num == 2:
             ex = Sym_2()

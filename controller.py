@@ -9,6 +9,6 @@ class Controller():
         self.req = 0
 
     def checkreq(self, num):
-        Chk = CheckResponse()
         self.req = num
+        Chk = CheckResponse()
         Chk.dis_page(self.req)

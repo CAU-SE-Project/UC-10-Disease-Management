@@ -39,14 +39,16 @@ class Main(QWidget):
         self.show()
 
     def setreq(self, num):
-        Con = Controller()
-        Con.checkreq(num)
-        sys.exit(app.exec_())
+        con = Controller()
+        con.checkreq(num)
+
+
 
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
 
     ex = Main()
+    #ex.show()
 
     sys.exit(app.exec_())
