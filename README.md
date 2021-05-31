@@ -27,7 +27,7 @@ Repository for Team B's subprogram, Disease Management
 You can see demonstration of the project below
 
 - screenshot example
-![image]("#")
+![image](uc-10-demo.png)
 
 
 ## Installation
