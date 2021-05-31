@@ -10,6 +10,13 @@ Repository for Team B's subprogram, Disease Management
 
 
 ## Overview
+- **main_page.py** : 가장 첫 화면, 화면에서 눌러지는 버튼 값에 따라 controller.py로 해당 값 전달
+
+- **controller.py** : main_page.py에서 전달받은 값을 checkResponse.py로 전달
+
+- **checkResponse.py** : controller.py에서 전달받은 값을 pageMaker로 전달하여 각 req값 별 만들어야하는 페이지 구분
+
+- **pageMaker.py** : checkResponse.py에서 전달받은 값을 통해 해당하는 페이지 호출 (alarm1,2.py / symptom1,2.py / action1,2.py)
 
 - **makeInform.py** : makeQuery()함수에서 alarm2.py / symptom2.py / action2.py 로 부터 QWidget 리스트를 불러와, 사용자의 입력값을 딕셔너리 형태로 변경하여 반환
  
@@ -27,7 +34,7 @@ Repository for Team B's subprogram, Disease Management
 You can see demonstration of the project below
 
 - screenshot example
-![image]("#")
+![image](uc-10-demo.png)
 
 
 ## Installation
